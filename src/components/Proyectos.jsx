@@ -33,18 +33,18 @@ function Proyectos() {
         { name: "GitHub", icon: FaGithub },
         { name: "Supabase", icon: SiSupabase },
       ],
-      link: "https://example.com/portfolio",
+      link: "https://tenax-gym.vercel.app/",
     },
     {
-      image: "",
+      image: "src/assets/Wordle.webp",
       name: "React Wordle",
-      description: "Web app que replica el juego Wordle, creada con React y gestionando el estado del juego con hooks.",
+      description: "Web app que replica el juego Wordle, creada con React y recibiendo palabras desde una API externa.",
       technologies: [
         { name: "React", icon: FaReact },
         { name: "GitHub", icon: FaGithub },
         { name: "Supabase", icon: SiSupabase },
       ],
-      link: "https://example.com/portfolio",
+      link: "https://react-wordle-lac.vercel.app/",
     },
   ];
 
