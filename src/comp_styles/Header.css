@@ -12,11 +12,13 @@ header {
   z-index: 1000;
 }
 
-.header_izquierda {
+.header_izquierda{
   padding-left: 100px;
   font-weight: bold;
   font-size: 30px;
 }
+
+
 
 .header_derecha {
   display: flex;
@@ -37,13 +39,14 @@ header {
   font-weight: bold;
 }
 
-.items {
+.items{
   color: #4e4e4e;
+  
 }
 
-.items a {
+.items a{
   text-decoration: none;
-  color: inherit;
+  color: inherit; /* hereda el color del elemento padre */
 }
 
 .items::after {
@@ -66,25 +69,28 @@ header {
   width: 100%;
 }
 
+
+
 button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
-    transition: all .15s 
-    ease-in-out;
-    margin: 0;
-    height: 50px;
-    padding: 10px 30px;
-    border: 2px solid;
-    border-radius: 2px;
-    background-color: #ffffff52;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .15s ease-in-out;
+  margin: 0;
+  height: 50px;
+  padding: 10px 30px;
+  border: 2px solid;
+  border-radius: 2px; 
+  background-color: #ffffff52;
+  cursor: pointer;
+  
 }
 
 button:hover {
-  background-color: #32ab26;
+  background-color: 
+  #32ab26;
   border-color: #32ab26;
   color: white;
 }

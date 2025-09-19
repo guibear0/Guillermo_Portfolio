@@ -1,18 +1,91 @@
 #proyectos {
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card {
-  float: left;
-  padding: 1rem;
-  min-width: 500px;
+#proyectos h2 {
+  margin-bottom: 32px;
+  margin-top: 60px;
 }
 
-.card .wrapper {
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.proyecto-card {
   background: #fff;
-  min-height: 540px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
   position: relative;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.3),
-              0 15px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.proyecto-title {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  color: #222;
+}
+
+.proyecto-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.proyecto-title a:hover {
+  color: #007bff;
+}
+
+.proyecto-technologies {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.tech-icon:hover {
+  color: #32aa27;
+}
+
+.proyecto-description {
+  font-size: 1rem;
+  color: #666;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-description {
+  opacity: 1;
+  max-height: 100px;
 }

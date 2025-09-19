@@ -6,13 +6,16 @@ import {
   FaReact,
   FaGitAlt,
   FaPhp,
-  FaWordpress
+  FaWordpress,
 } from "react-icons/fa";
 import { SiMysql, SiLaravel, SiCsswizardry } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
 
 function Acerca() {
   return (
+  
     <section id="acerca">
+      
       <div className="contenido-acerca">
         <div className="sobre-mi">
           <h2>Sobre mí</h2>
@@ -23,16 +26,15 @@ function Acerca() {
           </p>
           <h2>Estudios</h2>
           <h3>Formación en CIFP A Carballeira</h3>
-          <ul>
-            <li>Graduado en Desarrollo de Aplicaciones Web</li>
-            <li>Estudiando Desarrollo de Aplicaciones Multiplataforma</li>
-          </ul>
+      
+            <p>Graduado en Desarrollo de Aplicaciones Web <br/>            
+            Estudiando Desarrollo de Aplicaciones Multiplataforma</p>
           <h2>Certificados</h2>
-            <li>Ciberseguridad Avanzada en Entornos de <br/>las Tecnologías de la Operación</li>
+            <p>Ciberseguridad Avanzada en Entornos de <br/>las Tecnologías de la Operación</p>
         </div>
-
         <div className="bloque-tecnologias">
           <h2>Tecnologías</h2>
+          <h3>Uso habitual</h3>
           <div className="tecnologias">
             <FaHtml5 className="iconos html" title="HTML" />
             <SiCsswizardry className="iconos css" title="CSS" />
@@ -40,7 +42,7 @@ function Acerca() {
             <FaReact className="iconos react" title="React" />
             <FaGitAlt className="iconos git" title="Git"/>
             <FaPhp className="iconos php" title="PHP" />
-            <SiMysql className="iconos mysql" title="MySQL"/>
+            <RiSupabaseFill className="iconos supabase" title="Supabase"/>
             <FaWordpress className="iconos wordpress" title="WordPress" />
             <SiLaravel className="iconos laravel" title="Laravel"/>
           </div>
