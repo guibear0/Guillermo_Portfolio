@@ -1,0 +1,17 @@
+#inicio {
+  display: flex;
+  height: calc(100vh - 120px);
+  padding: 120px 100px 0;
+  color: white;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#inicio h1 {
+  font-size: 62px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+}

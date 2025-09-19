@@ -1,0 +1,83 @@
+
+h3 {
+  margin-bottom: 10px;
+}
+#acerca {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.contenido-acerca {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.sobre-mi {
+  flex: 1;
+  max-width: 600px;
+}
+
+.bloque-tecnologias {
+  flex: 1;
+  margin-left: 100px;
+}
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 300px;
+}
+
+.iconos {
+  width: 50px;
+  height: 50px;
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.iconos:hover {
+  transform: scale(1.1);
+}
+
+/* Colores oficiales en hover */
+.iconos.html:hover {
+  color: #e34f26;
+}
+
+.iconos.css:hover {
+  color: rebeccapurple;
+}
+
+.iconos.js:hover {
+  color: #f7df1e;
+}
+
+.iconos.react:hover {
+  color: #61dafb;
+}
+
+.iconos.git:hover {
+  color: #f1502f;
+}
+
+.iconos.php:hover {
+  color: #8892be;
+}
+
+.iconos.mysql:hover {
+  color: #00618a;
+}
+
+.iconos.wordpress:hover {
+  color: #21759b;
+}
+
+.iconos.laravel:hover {
+  color: #ff2d20;
+}
