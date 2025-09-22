@@ -12,7 +12,7 @@ function Experiencia() {
       <h2>Experiencia</h2>
       <div className="experiencias">
         <div className="experiencia-card" onClick={() => setModal("abril")}>
-          <img src="/src/assets/aceites.webp" alt="Aceites Abril" className="experiencia-img" />
+          <img src="/assets/aceites.webp" alt="Aceites Abril" className="experiencia-img" />
           <div className="experiencia-info">
             <h3>Aceites Abril</h3>
             <p>Técnico informático en <br/>Aceites Abril</p>
