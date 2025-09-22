@@ -13,9 +13,7 @@ import { RiSupabaseFill } from "react-icons/ri";
 
 function Acerca() {
   return (
-  
     <section id="acerca">
-      
       <div className="contenido-acerca">
         <div className="sobre-mi">
           <h2>Sobre mí</h2>

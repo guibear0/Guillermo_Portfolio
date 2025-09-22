@@ -30,8 +30,8 @@ function Proyectos() {
       description: "Sitio web para un gimnasio, desarrollado con React y Supabase para la gestión de usuarios y ejercicios.",
       technologies: [
         { name: "React", icon: FaReact },
-        { name: "GitHub", icon: FaGithub },
-        { name: "Supabase", icon: SiSupabase },
+        { name: "GitHub", icon:  SiSupabase },
+        { name: "Supabase", icon: FaGithub },
       ],
       link: "https://tenax-gym.vercel.app/",
     },
@@ -42,7 +42,6 @@ function Proyectos() {
       technologies: [
         { name: "React", icon: FaReact },
         { name: "GitHub", icon: FaGithub },
-        { name: "Supabase", icon: SiSupabase },
       ],
       link: "https://react-wordle-lac.vercel.app/",
     },

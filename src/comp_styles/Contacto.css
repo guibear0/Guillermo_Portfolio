@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+#contacto h2 {
+  margin-top: 60px;
+}
+
 .form-contacto {
   max-width: 400px;
   margin: auto;
@@ -19,14 +23,28 @@
 }
 
 .form-contacto button {
-  padding: 10px;
-  background: #32ab26;
-  border: none;
-  color: white;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .15s ease-in-out;
+  margin: 0;
+  height: 50px;
+  padding: 10px 30px;
+  border: 2px solid;
+  border-radius: 2px; 
+  background-color: #ffffff52;
   cursor: pointer;
 }
 
 .form-contacto button:hover {
-  background: #28951f;
+   background-color: 
+  #32ab26;
+  border-color: #32ab26;
+  color: white;
+}
+
+.form-contacto button p{
+  font-weight: bold;
 }
