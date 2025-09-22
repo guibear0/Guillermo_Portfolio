@@ -25,7 +25,7 @@ function ProyectoCard({ image, name, description, technologies, link }) {
 function Proyectos() {
   const projects = [
     {
-      image: "src/assets/TenaxGym.webp",
+      image: "/assets/TenaxGym.webp",
       name: "Tenax Gym",
       description: "Sitio web para un gimnasio, desarrollado con React y Supabase para la gestión de usuarios y ejercicios.",
       technologies: [
@@ -36,7 +36,7 @@ function Proyectos() {
       link: "https://tenax-gym.vercel.app/",
     },
     {
-      image: "src/assets/Wordle.webp",
+      image: "/assets/Wordle.webp",
       name: "React Wordle",
       description: "Web app que replica el juego Wordle, creada con React y recibiendo palabras desde una API externa.",
       technologies: [

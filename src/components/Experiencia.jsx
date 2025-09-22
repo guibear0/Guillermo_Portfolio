@@ -19,7 +19,7 @@ function Experiencia() {
           </div>
         </div>
         <div className="experiencia-card" onClick={() => setModal("contratame")}>
-          <img src="/src/assets/signo-de-interrogacion.webp" alt="Contrátame" className="experiencia-img" />
+          <img src="/assets/signo-de-interrogacion.webp" alt="Contrátame" className="experiencia-img" />
           <div className="experiencia-info">
             <h3>Tu empresa</h3>
             <p>¡Contrátame y verás de lo que soy capaz!</p>
