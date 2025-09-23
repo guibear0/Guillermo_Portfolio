@@ -1,7 +1,6 @@
 import "../comp_styles/Inicio.css";
 //eslint-disable-next-line
 import { motion } from "framer-motion";
-//vercel?
 function Inicio() {
   return (
     <section id="inicio" className="inicio">
