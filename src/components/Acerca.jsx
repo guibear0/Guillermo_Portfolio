@@ -56,7 +56,7 @@ function Acerca() {
                 alt="Vista previa CV" 
               />
               <a href="assets/CV_Guillermo_Bello_Armada.pdf" download className="btn-cv">
-                Descargar PDF
+                Descargar PD
               </a>
             </div>
           </div>
