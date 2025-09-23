@@ -3,7 +3,7 @@
   height: calc(100vh - 120px);
   padding: 120px 100px 0;
   color: white;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #162415, #264823, #32ab26);
   align-items: center;
   justify-content: space-between;
 }
@@ -14,4 +14,14 @@
   margin-bottom: 20px;
   text-align: left;
   font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  #inicio h1:nth-child(2) {
+    display: none;
+  }
+#inicio h1 {
+  padding: 20px;
+}
+
 }

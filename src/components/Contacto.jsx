@@ -2,7 +2,7 @@
 import "../comp_styles/Contacto.css";
 import { useState } from "react";
 //eslint-disable-next-line
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaSpinner, FaCheck } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
@@ -14,8 +14,9 @@ function Contacto() {
     mensaje: "",
   });
   const [enviando, setEnviando] = useState(false);
-  const [exito, setExito] = useState(false); 
-  const [error, setError] = useState(false); // nuevo estado para error
+  const [exito, setExito] = useState(false);
+  const [error, setError] = useState(false);
+  const [copiado, setCopiado] = useState(false);
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -45,10 +46,17 @@ function Contacto() {
       setTimeout(() => setExito(false), 2000);
     } catch (err) {
       console.error(err);
-      setError(true); // marca error
+      setError(true);
     } finally {
       setEnviando(false);
     }
+  }
+
+  function copiarCorreo() {
+    navigator.clipboard.writeText("guibear0@gmail.com").then(() => {
+      setCopiado(true);
+      setTimeout(() => setCopiado(false), 2000); // lo quitamos después de 2s
+    });
   }
 
   return (
@@ -58,39 +66,18 @@ function Contacto() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-      >
-        Contacto
-      </motion.h2>
+      <h2>Contacto</h2>
+      <p style={{ marginBottom: "15px", color: "#4e4e4e" }} >¿Quieres contactar conmigo? Envíame un mensaje.</p>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-      >
-        ¿Quieres trabajar conmigo? Envíame un mensaje.
-      </motion.p>
-
-      <motion.form
-        className="form-contacto"
-        onSubmit={handleSubmit}
-        initial={{ scale: 0.95, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.6 }}
-      >
-        <motion.input
-          whileFocus={{ scale: 1.02 }}
+      <form className="form-contacto" onSubmit={handleSubmit}>
+        <input
           name="nombre"
           value={form.nombre}
           onChange={handleChange}
           placeholder="Tu nombre"
           required
         />
-        <motion.input
-          whileFocus={{ scale: 1.02 }}
+        <input
           type="email"
           name="email"
           value={form.email}
@@ -98,16 +85,14 @@ function Contacto() {
           placeholder="Tu correo"
           required
         />
-        <motion.input
-          whileFocus={{ scale: 1.02 }}
+        <input
           name="asunto"
           value={form.asunto}
           onChange={handleChange}
           placeholder="Asunto"
           required
         />
-        <motion.textarea
-          whileFocus={{ scale: 1.02 }}
+        <textarea
           name="mensaje"
           value={form.mensaje}
           onChange={handleChange}
@@ -144,18 +129,40 @@ function Contacto() {
           )}
         </motion.button>
 
-        {/* Mensaje de error */}
         {error && (
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
             style={{ color: "red", marginTop: "1rem" }}
           >
             Hubo un error al enviar el mensaje.
           </motion.p>
         )}
-      </motion.form>
+      </form>
+
+      {/* Texto alternativo con copia */}
+      <p style={{ marginTop: "1.5rem", color: "#4e4e4e" }}>
+        O si lo prefieres copia mi correo con un click:{" "}
+        <span onClick={copiarCorreo} className="correo-link">
+          guibear0@gmail.com
+        </span>
+      </p>
+
+      {/* Aviso de copiado con AnimatePresence */}
+      <AnimatePresence>
+        {copiado && (
+          <motion.p
+            key="copiado"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
+            style={{ color: "#32ab26", marginTop: "0.5rem" }}
+          >
+            📋 Copiado al portapapeles
+          </motion.p>
+        )}
+      </AnimatePresence>
     </motion.section>
   );
 }

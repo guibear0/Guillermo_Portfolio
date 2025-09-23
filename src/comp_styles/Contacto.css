@@ -48,3 +48,32 @@
 .form-contacto button p{
   font-weight: bold;
 }
+
+.correo-link {
+  position: relative;
+  color: #4e4e4e;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 5px;
+  &:hover{
+    color: #32ab26;
+    font-weight: bold;
+  }
+}
+
+.correo-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #32ab26;
+  transition: width 0.2s ease-in-out;
+}
+
+.correo-link:hover::after {
+  width: 100%;
+  color: #32ab26;
+}
