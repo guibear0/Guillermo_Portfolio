@@ -88,3 +88,34 @@ h3 {
 .iconos.supabase:hover {
   color: #3ecf8e;
 }
+
+
+@media (max-width: 900px) {
+  .contenido-acerca {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .bloque-tecnologias {
+    margin-left: 0;
+  }
+
+  .tecnologias {
+    justify-self: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 200px;
+  }
+
+  .iconos {
+    width: 40px;
+    height: 40px;
+  }
+}

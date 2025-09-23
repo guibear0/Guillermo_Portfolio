@@ -12,22 +12,6 @@ function Inicio() {
         Guillermo Bello<br />Armada
       </motion.h1>
 
-      {/* Barra / con rotación */}
-      <motion.h1
-        animate={{
-          y: [0, -10, 0],
-          rotate: [0, 360], // Rotación infinita
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          repeatType: "loop",
-          ease: "linear", // Rotación uniforme
-        }}
-      >
-        |
-      </motion.h1>
-
       {/* Puesto */}
       <motion.h1
         animate={{ y: [0, -10, 0] }}

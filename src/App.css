@@ -31,3 +31,30 @@ section {
   border-bottom: 1px solid #ddd;
   min-height: 700px;
 }
+
+
+/* Mobile responsive para secciones */
+@media (max-width: 900px) {
+  section {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

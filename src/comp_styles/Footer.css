@@ -73,3 +73,36 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
 }
+
+/* Mobile responsive para Footer */
+@media (max-width: 900px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.9rem;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.1rem;
+  }
+}

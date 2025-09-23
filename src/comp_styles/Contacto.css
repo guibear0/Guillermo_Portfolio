@@ -3,10 +3,6 @@
   text-align: center;
 }
 
-#contacto h2 {
-  margin-top: 60px;
-}
-
 .form-contacto {
   max-width: 400px;
   margin: auto;
@@ -14,7 +10,9 @@
   flex-direction: column;
   gap: 15px;
 }
-
+#contacto h2 {
+  margin-top: 60px;
+}
 .form-contacto input,
 .form-contacto textarea {
   padding: 10px;
@@ -76,4 +74,23 @@
 .correo-link:hover::after {
   width: 100%;
   color: #32ab26;
+}
+
+
+/* Mobile responsive para Contacto */
+@media (max-width: 900px) {
+  #contacto {
+    padding: 40px 20px;
+  }
+
+  .form-contacto {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #contacto {
+    padding: 30px 15px;
+  }
 }

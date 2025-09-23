@@ -48,3 +48,35 @@
   color: #4e4e4e;
   line-height: 1.4;
 }
+
+
+/* Mobile responsive para Proyectos */
+@media (max-width: 900px) {
+  #proyectos {
+    padding: 2rem 1rem;
+  }
+
+  .proyectos-container {
+    gap: 1.5rem;
+  }
+
+  .proyecto-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .proyecto-card {
+    max-width: 300px;
+  }
+
+  .proyecto-img {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+}
